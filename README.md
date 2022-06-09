@@ -6,4 +6,4 @@ This script only works against Linux systems.
 This script is easily detected by any antivirus (including Windows Defender). 
 
 This project was created to show the vulnerability the os.system function has. Calling os.system does not require any credentials or privileges. 
-Websites and Applications that import the os library are vulnerability to command injection via the method demonstrated in this script.
+Websites and Applications that import the os library are vulnerability to command injection, such as Server Side Template Injection.
